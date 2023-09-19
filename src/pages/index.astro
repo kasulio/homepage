@@ -1,0 +1,35 @@
+---
+import githubIcon from '../assets/github-mark.svg?raw';
+import '@fontsource/vt323';
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lukas Frey</title>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div
+      class="flex flex-col justify-between items-center h-screen w-screen p-4 text-center"
+    >
+      <div></div>
+      <a
+        class="text-[min(10vw,5em)] dark:text-slate-200 text-slate-900 font-mono"
+        href="mailto:hey@lukasfrey.com">hey@lukasfrey.com</a
+      >
+      <div class="dark:text-slate-200 text-slate-900">
+        <a
+          class="h-8 md:h-10 aspect-square block"
+          href="https://github.com/lufrey"
+          target="_blank"
+          title="GitHub von Lukas Frey"
+        >
+          <Fragment set:html={githubIcon} />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
